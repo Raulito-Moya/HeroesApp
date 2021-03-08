@@ -1,4 +1,4 @@
 # HeroApp
 
-Recuerden ejecutar en comando ```npm install``` para reconstruir los módulos de Node.
+A Card List about Heroes Comics in DC y Marvel
 
