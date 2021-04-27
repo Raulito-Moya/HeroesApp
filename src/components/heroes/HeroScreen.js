@@ -2,9 +2,9 @@ import React, { useMemo } from 'react';
 import { useParams, Redirect } from 'react-router-dom';
 import { getHeroById } from '../../selectors/getHeroById';
 
-export const HeroScreen = ({ history }) => {
-
-    const { heroeId } = useParams();
+export const HeroScreen = ({ history , match}) => {
+    //console.log(match.params);
+    const { heroeId } = match.params
 
     const hero = useMemo(() => getHeroById( heroeId ), [ heroeId ]);
 
